@@ -1,0 +1,106 @@
+{
+  "placeholderImages": [
+    {
+      "id": "hero-farmland",
+      "description": "Lush green farmland in Bihar after rain.",
+      "imageUrl": "https://images.unsplash.com/photo-1579908195863-2a7b4307a8cf?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw4fHxmYXJtbGFuZCUyMHJhaW58ZW58MHx8fHwxNzYwNzY1NDk2fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "farmland rain"
+    },
+    {
+      "id": "challenge-flood",
+      "description": "A flooded area in Bihar, showing the extent of the challenge.",
+      "imageUrl": "https://images.unsplash.com/photo-1704103258899-78a73254775a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw5fHxmbG9vZCUyMHZpbGxhZ2V8ZW58MHx8fHwxNzYwNzY1NDk2fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "flood village"
+    },
+    {
+      "id": "solution-process",
+      "description": "Diagram of the biochar process.",
+      "imageUrl": "https://images.unsplash.com/photo-1570615541379-e6b7ab6d4eb9?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxiaW9jaGFyJTIwcHJvY2Vzc3xlbnwwfHx8fDE3NjA3NjU0OTZ8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "biochar process"
+    },
+    {
+      "id": "prototype-kiln",
+      "description": "A low-cost biochar kiln used in the prototype phase.",
+      "imageUrl": "https://images.unsplash.com/photo-1676836447491-abab1366a9eb?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw5fHxtZXRhbCUyMGtpbG58ZW58MHx8fHwxNzYwNzY1NDk2fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "metal kiln"
+    },
+    {
+      "id": "team-founder",
+      "description": "Portrait of Ankit Kumar, founder of Urvar Bhumi.",
+      "imageUrl": "https://images.unsplash.com/photo-1560250097-0b93528c311a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxtYW4lMjBwb3J0cmFpdHxlbnwwfHx8fDE3NjA3MzA5NDZ8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "man portrait"
+    },
+    {
+      "id": "team-farmer-1",
+      "description": "A local farmer from Bihar.",
+      "imageUrl": "https://images.unsplash.com/photo-1696371269645-7297d31dd4d6?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxmYXJtZXIlMjBpbmRpYXxlbnwwfHx8fDE3NjA3NjU0OTZ8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "farmer india"
+    },
+    {
+      "id": "team-farmer-2",
+      "description": "Another local farmer from Bihar.",
+      "imageUrl": "https://images.unsplash.com/photo-1591206726618-be36ac71c937?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHx3b21hbiUyMGZhcm1lcnxlbnwwfHx8fDE3NjA3NTkyNTd8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "woman farmer"
+    },
+    {
+      "id": "blog-post-1",
+      "description": "Soil with biochar mixed in.",
+      "imageUrl": "https://images.unsplash.com/photo-1605287099480-f90f257027e3?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxzb2lsJTIwaGFuZHN8ZW58MHx8fHwxNzYwNzMxOTE2fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "soil hands"
+    },
+    {
+      "id": "blog-post-2",
+      "description": "A village scene in Purnea, Bihar.",
+      "imageUrl": "https://images.unsplash.com/photo-1607011151437-0055106add6c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw5fHx2aWxsYWdlJTIwaW5kaWF8ZW58MHx8fHwxNzYwNzY1NDk2fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "village india"
+    },
+    {
+      "id": "blog-post-3",
+      "description": "People in a meeting or workshop.",
+      "imageUrl": "https://images.unsplash.com/photo-1515187029135-18ee286d815b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw4fHxwZW9wbGUlMjBtZWV0aW5nfGVufDB8fHx8MTc2MDc0ODAzMXww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "people meeting"
+    },
+    {
+      "id": "gallery-1",
+      "description": "Wide shot of green fields in Bihar.",
+      "imageUrl": "https://images.unsplash.com/photo-1544013030-dac22dc4546a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxncmVlbiUyMGZpZWxkc3xlbnwwfHx8fDE3NjA3NjU0OTZ8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "green fields"
+    },
+    {
+      "id": "gallery-2",
+      "description": "Close up of rich, dark soil.",
+      "imageUrl": "https://images.unsplash.com/photo-1689658855445-b1b2d50ee618?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxkYXJrJTIwc29pbHxlbnwwfHx8fDE3NjA3NjU0OTZ8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "dark soil"
+    },
+    {
+      "id": "gallery-3",
+      "description": "A farmer working in the field.",
+      "imageUrl": "https://images.unsplash.com/photo-1718968924561-a25d9ec0c3f3?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw4fHxmYXJtZXIlMjB3b3JraW5nfGVufDB8fHx8MTc2MDc2NTQ5Nnww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "farmer working"
+    },
+    {
+      "id": "gallery-4",
+      "description": "The biochar production process.",
+      "imageUrl": "https://images.unsplash.com/photo-1665791566407-22044ee904f3?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHxjaGFyY29hbCUyMHByb2R1Y3Rpb258ZW58MHx8fHwxNzYwNzQyMTIzfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "charcoal production"
+    },
+    {
+      "id": "gallery-5",
+      "description": "A community training workshop.",
+      "imageUrl": "https://images.unsplash.com/photo-1759074037385-0ad31887b14f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxjb21tdW5pdHklMjB3b3Jrc2hvcHxlbnwwfHx8fDE3NjA3MzIxNzF8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "community workshop"
+    },
+    {
+      "id": "gallery-6",
+      "description": "A smiling child in a Bihar village.",
+      "imageUrl": "https://images.unsplash.com/photo-1652761029249-6ec32a82ccb0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxzbWlsaW5nJTIwY2hpbGR8ZW58MHx8fHwxNzYwNzY1NDk2fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "smiling child"
+    },
+    {
+      "id": "logo-bevisioneers",
+      "description": "Logo for BeVisioneers Mercedes-Benz Fellowship.",
+      "imageUrl": "https://images.unsplash.com/photo-1755586258247-67f5148d76c3?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHxsb2dvJTIwYWJzdHJhY3R8ZW58MHx8fHwxNzYwNzMzNTYwfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "logo abstract"
+    }
+  ]
+}
