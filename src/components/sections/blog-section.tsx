@@ -2,82 +2,90 @@ import Image from "next/image";
 import Link from "next/link";
 import { PlaceHolderImages } from "@/lib/placeholder-images";
 import { Button } from "@/components/ui/button";
-import { Card, CardContent, CardHeader, CardTitle, CardFooter } from "@/components/ui/card";
-import { Badge } from "@/components/ui/badge";
+import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 
 const posts = [
   {
     slug: "how-biochar-restores-water-balance",
-    title: "How Biochar Restores Water Balance in Soil",
-    excerpt: "A deep dive into the science of how porous biochar acts like a sponge, holding water and nutrients exactly where plants need them.",
+    title: "How Biochar Restores Water Balance",
+    excerpt: "A deep dive into the science of how porous biochar acts like a sponge...",
     imageId: "blog-post-1",
-    category: "Science"
   },
   {
     slug: "my-first-visit-to-purnea",
-    title: "My First Visit to Purnea: Listening to Farmers",
-    excerpt: "Stories and insights from the ground, where we learned about the real-world challenges and hopes of farming communities.",
+    title: "Our First Visit to Purnea: Listening to Farmers",
+    excerpt: "Stories and insights from the ground, where we learned about challenges...",
     imageId: "blog-post-2",
-    category: "Field Notes"
   },
   {
     slug: "what-i-learned-from-fellow-visioneers",
-    title: "What I Learned from Fellow Visioneers",
-    excerpt: "Reflections on collaboration, innovation, and the power of a global community dedicated to positive change.",
+    title: "Collaboration & Learnings from the Fellowship",
+    excerpt: "Reflections on collaboration, innovation, and the power of a global community...",
     imageId: "blog-post-3",
-    category: "Journey"
   },
 ];
 
 export function BlogSection() {
-  return (
-    <section id="blog" className="py-16 sm:py-24 bg-card">
-      <div className="container">
-        <div className="text-center mb-12">
-          <h2 className="text-3xl font-bold tracking-tight text-foreground sm:text-4xl">
-            Field Notes from Bihar
-          </h2>
-          <p className="mt-4 text-lg text-muted-foreground">
-            Stories, updates, and reflections from our journey.
-          </p>
-        </div>
+  const fieldNotesImage = PlaceHolderImages.find(img => img.id === 'field-notes-bg');
 
-        <div className="grid lg:grid-cols-3 gap-8">
-          {posts.map((post) => {
-            const postImage = PlaceHolderImages.find((img) => img.id === post.imageId);
-            return (
-              <Link key={post.slug} href={`/blog/${post.slug}`} className="block hover:no-underline group">
-                <Card className="flex flex-col overflow-hidden h-full transition-shadow duration-300 group-hover:shadow-xl">
-                  {postImage && (
-                    <div className="relative aspect-video">
-                      <Image
-                        src={postImage.imageUrl}
-                        alt={post.title}
-                        fill
-                        className="object-cover"
-                        data-ai-hint={postImage.imageHint}
-                      />
-                    </div>
-                  )}
-                  <CardHeader>
-                    <Badge variant="secondary" className="w-fit">{post.category}</Badge>
-                    <CardTitle className="mt-2">{post.title}</CardTitle>
-                  </CardHeader>
-                  <CardContent className="flex-grow">
-                    <p className="text-muted-foreground">{post.excerpt}</p>
-                  </CardContent>
-                  <CardFooter>
-                    <span className="text-sm font-semibold text-primary group-hover:underline">Read More →</span>
-                  </CardFooter>
-                </Card>
-              </Link>
-            );
-          })}
-        </div>
-        <div className="text-center mt-12">
-          <Button size="lg" asChild>
-            <Link href="/blog">Read More Stories</Link>
-          </Button>
+  return (
+    <section id="blog" className="py-16 sm:py-24 bg-background">
+      <div className="container">
+        <div className="grid lg:grid-cols-2 gap-12 items-center">
+          
+          <div className="space-y-6">
+            {posts.map((post) => {
+                const postImage = PlaceHolderImages.find((img) => img.id === post.imageId);
+                return (
+                  <Link key={post.slug} href={`/blog/${post.slug}`} className="block hover:no-underline group">
+                    <Card className="flex flex-col sm:flex-row overflow-hidden h-full transition-shadow duration-300 group-hover:shadow-xl bg-card/80 backdrop-blur-sm rounded-2xl">
+                      {postImage && (
+                        <div className="relative w-full sm:w-1/3 aspect-video sm:aspect-auto">
+                          <Image
+                            src={postImage.imageUrl}
+                            alt={post.title}
+                            fill
+                            className="object-cover"
+                            data-ai-hint={postImage.imageHint}
+                          />
+                        </div>
+                      )}
+                      <div className="w-full sm:w-2/3">
+                        <CardHeader>
+                          <CardTitle className="text-lg">{post.title}</CardTitle>
+                        </CardHeader>
+                        <CardContent>
+                          <p className="text-sm text-muted-foreground">{post.excerpt}</p>
+                        </CardContent>
+                      </div>
+                    </Card>
+                  </Link>
+                );
+              })}
+            <div className="pt-4">
+              <Button size="lg" variant="outline" asChild>
+                <Link href="/blog">Access All Notes</Link>
+              </Button>
+            </div>
+          </div>
+
+          <div className="relative aspect-[4/5] rounded-2xl overflow-hidden shadow-lg h-full hidden lg:block">
+            {fieldNotesImage && (
+              <Image 
+                src={fieldNotesImage.imageUrl}
+                alt={fieldNotesImage.description}
+                fill
+                className="object-cover"
+                data-ai-hint={fieldNotesImage.imageHint}
+              />
+            )}
+            <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent" />
+            <div className="absolute bottom-0 p-8 text-white">
+              <h2 className="text-4xl font-bold">Field Notes from Bihar</h2>
+              <p className="mt-2 text-lg text-white/90">Stories, discoveries, and reflections from the ground.</p>
+            </div>
+          </div>
+          
         </div>
       </div>
     </section>

@@ -2,27 +2,33 @@
   "placeholderImages": [
     {
       "id": "hero-farmland",
-      "description": "Lush green farmland in Bihar after rain.",
-      "imageUrl": "https://images.unsplash.com/photo-1579908195863-2a7b4307a8cf?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw4fHxmYXJtbGFuZCUyMHJhaW58ZW58MHx8fHwxNzYwNzY1NDk2fDA&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "farmland rain"
+      "description": "A farmer walking through a lush green rice paddy at sunrise in Bihar.",
+      "imageUrl": "https://images.unsplash.com/photo-1596751302841-5a52d3485786?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxpbmRpYW4lMjBmYXJtZXIlMjByaWNlJTIwZmllbGR8ZW58MHx8fHwxNzEzMTAwMjM4fDA&ixlib=rb-4.0.3&q=80&w=1080",
+      "imageHint": "indian farmer"
     },
     {
       "id": "challenge-flood",
-      "description": "A flooded area in Bihar, showing the extent of the challenge.",
+      "description": "A flooded village in Bihar, showing the extent of the challenge.",
       "imageUrl": "https://images.unsplash.com/photo-1704103258899-78a73254775a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw5fHxmbG9vZCUyMHZpbGxhZ2V8ZW58MHx8fHwxNzYwNzY1NDk2fDA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "flood village"
     },
     {
-      "id": "solution-process",
-      "description": "Diagram of the biochar process.",
-      "imageUrl": "https://images.unsplash.com/photo-1570615541379-e6b7ab6d4eb9?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxiaW9jaGFyJTIwcHJvY2Vzc3xlbnwwfHx8fDE3NjA3NjU0OTZ8MA&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "biochar process"
+      "id": "rice-grain",
+      "description": "A close-up macro shot of a single grain of rice.",
+      "videoUrl": "/rotan-rice.mp4",
+      "imageHint": "rice grain"
     },
     {
-      "id": "prototype-kiln",
-      "description": "A low-cost biochar kiln used in the prototype phase.",
-      "imageUrl": "https://images.unsplash.com/photo-1676836447491-abab1366a9eb?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw5fHxtZXRhbCUyMGtpbG58ZW58MHx8fHwxNzYwNzY1NDk2fDA&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "metal kiln"
+      "id": "prototype-bg",
+      "description": "A dark, textured background of biochar.",
+      "imageUrl": "https://images.unsplash.com/photo-1605287099480-f90f257027e3?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxzb2lsJTIwaGFuZHN8ZW58MHx8fHwxNzYwNzMxOTE2fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "dark soil"
+    },
+    {
+      "id": "prototype-diagram",
+      "description": "A diagram or illustration of a biochar kiln.",
+      "imageUrl": "https://images.unsplash.com/photo-1667372525822-d226d23018dc?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHxraWxuJTIwZGlhZ3JhbXxlbnwwfHx8fDE3NzAzNjIwMDJ8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "kiln diagram"
     },
     {
       "id": "team-founder",
@@ -37,10 +43,28 @@
       "imageHint": "farmer india"
     },
     {
-      "id": "team-farmer-2",
-      "description": "Another local farmer from Bihar.",
+      "id": "team-mentor",
+      "description": "A portrait of a mentor or advisor.",
       "imageUrl": "https://images.unsplash.com/photo-1591206726618-be36ac71c937?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHx3b21hbiUyMGZhcm1lcnxlbnwwfHx8fDE3NjA3NTkyNTd8MA&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "woman farmer"
+      "imageHint": "woman portrait"
+    },
+    {
+      "id": "team-bg",
+      "description": "A background image of dry rice stalks.",
+      "imageUrl": "https://images.unsplash.com/photo-1762089720259-5f1bab60e9e2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxyaWNlJTIwc3RhbGtzfGVufDB8fHx8MTc3MDM2MjAwMXww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "rice stalks"
+    },
+    {
+      "id": "collaborate-bg",
+      "description": "Farmers working together in a field.",
+      "imageUrl": "https://images.unsplash.com/photo-1620192138765-b1b63390a8a4?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxpbmRpYW4lMjBmYXJtZXJzJTIwd29ya2luZ3xlbnwwfHx8fDE3MTMwOTk5NzB8MA&ixlib=rb-4.0.3&q=80&w=1080",
+      "imageHint": "farmers working"
+    },
+    {
+      "id": "field-notes-bg",
+      "description": "A beautiful landscape of a field in Bihar.",
+      "imageUrl": "https://images.unsplash.com/photo-1642863742007-c4e231084dc3?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw4fHxiaWhhciUyMGxhbmRzY2FwZXxlbnwwfHx8fDE3NzAzNjIwMDF8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "bihar landscape"
     },
     {
       "id": "blog-post-1",
@@ -61,46 +85,58 @@
       "imageHint": "people meeting"
     },
     {
-      "id": "gallery-1",
-      "description": "Wide shot of green fields in Bihar.",
-      "imageUrl": "https://images.unsplash.com/photo-1544013030-dac22dc4546a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxncmVlbiUyMGZpZWxkc3xlbnwwfHx8fDE3NjA3NjU0OTZ8MA&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "green fields"
-    },
-    {
-      "id": "gallery-2",
-      "description": "Close up of rich, dark soil.",
-      "imageUrl": "https://images.unsplash.com/photo-1689658855445-b1b2d50ee618?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxkYXJrJTIwc29pbHxlbnwwfHx8fDE3NjA3NjU0OTZ8MA&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "dark soil"
-    },
-    {
-      "id": "gallery-3",
-      "description": "A farmer working in the field.",
-      "imageUrl": "https://images.unsplash.com/photo-1718968924561-a25d9ec0c3f3?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw4fHxmYXJtZXIlMjB3b3JraW5nfGVufDB8fHx8MTc2MDc2NTQ5Nnww&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "farmer working"
-    },
-    {
-      "id": "gallery-4",
-      "description": "The biochar production process.",
-      "imageUrl": "https://images.unsplash.com/photo-1665791566407-22044ee904f3?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHxjaGFyY29hbCUyMHByb2R1Y3Rpb258ZW58MHx8fHwxNzYwNzQyMTIzfDA&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "charcoal production"
-    },
-    {
-      "id": "gallery-5",
-      "description": "A community training workshop.",
-      "imageUrl": "https://images.unsplash.com/photo-1759074037385-0ad31887b14f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxjb21tdW5pdHklMjB3b3Jrc2hvcHxlbnwwfHx8fDE3NjA3MzIxNzF8MA&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "community workshop"
-    },
-    {
-      "id": "gallery-6",
-      "description": "A smiling child in a Bihar village.",
-      "imageUrl": "https://images.unsplash.com/photo-1652761029249-6ec32a82ccb0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxzbWlsaW5nJTIwY2hpbGR8ZW58MHx8fHwxNzYwNzY1NDk2fDA&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "smiling child"
-    },
-    {
       "id": "logo-bevisioneers",
       "description": "Logo for BeVisioneers Mercedes-Benz Fellowship.",
-      "imageUrl": "https://images.unsplash.com/photo-1755586258247-67f5148d76c3?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHxsb2dvJTIwYWJzdHJhY3R8ZW58MHx8fHwxNzYwNzMzNTYwfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1747862712508-e1290330085f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxsb2dvJTIwYWJzdHJhY3R8ZW58MHx8fHwxNzcwMjcxOTE3fDA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "logo abstract"
+    },
+    {
+      "id": "logo-bevisioneers-white",
+      "description": "White logo for BeVisioneers for dark backgrounds.",
+      "imageUrl": "https://images.unsplash.com/photo-1651223969333-7a02ad74c4f0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxsb2dvJTIwYWJzdHJhY3QlMjB3aGl0ZXxlbnwwfHx8fDE3NzAzNjIwMDF8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "logo abstract white"
+    },
+    {
+      "id": "logo-icon",
+      "description": "Urvar Bhumi logo icon, a stylized leaf or sprout.",
+      "imageUrl": "https://images.unsplash.com/photo-1720105447193-583011440aaa?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxsZWFmJTIwc3Byb3V0fGVufDB8fHx8MTc3MDM2MjAwMXww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "leaf sprout"
+    },
+    {
+      "id": "icon-flood",
+      "description": "Icon representing floods",
+      "imageUrl": "https://images.unsplash.com/photo-1703659743275-e73580992ada?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMHx8Zmxvb2QlMjBpY29ufGVufDB8fHx8MTc3MDM2MTQ4M3ww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "flood icon"
+    },
+    {
+      "id": "icon-soil-absorption",
+      "description": "Icon representing poor soil absorption",
+      "imageUrl": "https://images.unsplash.com/photo-1562722902-d33533894eea?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHxzb2lsJTIwaWNvbnxlbnwwfHx8fDE3NzAzNjE0ODN8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "soil icon"
+    },
+    {
+      "id": "icon-fertilizer-use",
+      "description": "Icon representing fertilizer use",
+      "imageUrl": "https://picsum.photos/seed/iconfert/40/40",
+      "imageHint": "fertilizer icon"
+    },
+    {
+      "id": "icon-stubble-burning",
+      "description": "Icon representing stubble burning",
+      "imageUrl": "https://images.unsplash.com/photo-1743698205310-cd814a95afab?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxmaXJlJTIwaWNvbnxlbnwwfHx8fDE3NzAzNjE0ODN8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "fire icon"
+    },
+    {
+      "id": "icon-linkedin",
+      "description": "LinkedIn social media icon",
+      "imageUrl": "https://images.unsplash.com/photo-1746608943402-dab648e18855?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw5fHxsaW5rZWRpbiUyMGljb258ZW58MHx8fHwxNzcwMzYxNDgzfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "linkedin icon"
+    },
+    {
+      "id": "icon-instagram",
+      "description": "Instagram social media icon",
+      "imageUrl": "https://images.unsplash.com/photo-1634942537034-2531766767d1?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxpbnN0YWdyYW0lMjBpY29ufGVufDB8fHx8MTc3MDM2MTQ4M3ww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "instagram icon"
     }
   ]
 }

@@ -5,7 +5,7 @@ import { ThemeProvider } from '@/components/theme-provider';
 import { Toaster } from '@/components/ui/toaster';
 
 export const metadata: Metadata = {
-  title: 'Urvar Bhumi | उर्वर भूमि – Restoring Bihar’s Soil with Sustainable Biochar Solutions',
+  title: 'Urvar Bhumi',
   description: 'Urvar Bhumi (उर्वर भूमि) is a youth-led climate initiative transforming farm waste into biochar to restore soil fertility, reduce floods, and empower farmers across Bihar. A BeVisioneers Fellowship 2025 project, building a sustainable and resilient future from the ground up.',
 };
 

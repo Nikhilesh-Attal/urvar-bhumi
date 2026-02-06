@@ -2,22 +2,24 @@
 
 import * as React from "react";
 import Link from "next/link";
+import Image from "next/image";
 import { ThemeToggle } from "@/components/theme-toggle";
 import { cn } from "@/lib/utils";
 import { Button } from "@/components/ui/button";
-import { usePathname } from "next/navigation";
+import { PlaceHolderImages } from "@/lib/placeholder-images";
+import { User, Menu } from "lucide-react";
+import { Sheet, SheetContent, SheetTrigger, SheetClose } from "@/components/ui/sheet";
 
 const navigationLinks = [
-  { href: "/#purpose", label: "Purpose" },
-  { href: "/#solution", label: "Solution" },
-  { href: "/#journey", label: "Journey" },
+  { href: "/#solution", label: "Our Mission" },
+  { href: "/blog", label: "Blog" },
   { href: "/gallery", label: "Gallery" },
-  { href: "/#contact", label: "Contact" },
+  { href: "/resources", label: "Resources" },
 ];
 
 export function SiteHeader() {
   const [isScrolled, setIsScrolled] = React.useState(false);
-  const pathname = usePathname();
+  const logoImage = PlaceHolderImages.find((img) => img.id === "logo-icon");
 
   React.useEffect(() => {
     const handleScroll = () => {
@@ -27,55 +29,92 @@ export function SiteHeader() {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
-  const scrollTo = (selector: string) => {
-    const element = document.querySelector(selector);
-    if (element) {
-      element.scrollIntoView({ behavior: 'smooth' });
-    }
-  };
-
-  const handleNavClick = (e: React.MouseEvent<HTMLAnchorElement>, href: string) => {
-    if (href.startsWith("/#")) {
-      e.preventDefault();
-      // Only scroll if on the homepage
-      if (pathname === "/") {
-        scrollTo(href.substring(1));
-      } else {
-        // If on another page, navigate to homepage and then scroll
-        window.location.href = href;
-      }
-    }
-    // For direct links like /gallery, the default Link behavior will work
-  };
-
   return (
     <header
       className={cn(
         "sticky top-0 z-50 w-full border-b border-transparent transition-all duration-300",
-        isScrolled ? "border-border/40 bg-background/95 backdrop-blur-sm" : ""
+        isScrolled ? "border-border/40 bg-background/90 backdrop-blur-sm" : ""
       )}
     >
-      <div className="container flex h-16 items-center">
+      <div className="container flex h-20 items-center">
         <Link href="/" className="mr-6 flex items-center space-x-2">
-          <span className="font-bold font-headline text-lg">
-            उर्वर भूमि <span className="font-body text-base font-normal text-muted-foreground">Urvar Bhumi</span>
+           {logoImage && (
+              <Image
+                src={logoImage.imageUrl}
+                alt="Urvar Bhumi Logo"
+                width={32}
+                height={32}
+                data-ai-hint={logoImage.imageHint}
+              />
+            )}
+          <span className="font-bold font-headline text-xl tracking-wider">
+            Urvar Bhumi
           </span>
         </Link>
-        <nav className="hidden md:flex flex-1 items-center gap-6 text-sm">
-          {navigationLinks.map((link) => (
-             <Link
-              key={link.href}
-              href={link.href}
-              onClick={(e) => handleNavClick(e, link.href)}
-              className="text-foreground/60 transition-colors hover:text-foreground/80"
-            >
-              {link.label}
-            </Link>
-          ))}
+        
+        <nav className="hidden md:flex flex-1 items-center justify-center gap-6 text-sm">
+            {navigationLinks.map((link) => (
+                <Link
+                key={link.href}
+                href={link.href}
+                className="text-foreground/80 transition-colors hover:text-foreground font-medium"
+                >
+                {link.label}
+                </Link>
+            ))}
         </nav>
-        <div className="flex flex-1 items-center justify-end space-x-4">
-          <Button variant="ghost" onClick={() => scrollTo('#get-involved')}>Get Involved</Button>
-          <ThemeToggle />
+
+        <div className="flex flex-1 items-center justify-end space-x-2">
+            <Button variant="ghost" size="icon" className="hidden md:inline-flex">
+                <User />
+            </Button>
+            <ThemeToggle />
+            
+            <div className="md:hidden">
+              <Sheet>
+                <SheetTrigger asChild>
+                  <Button variant="ghost" size="icon">
+                    <Menu />
+                    <span className="sr-only">Open menu</span>
+                  </Button>
+                </SheetTrigger>
+                <SheetContent side="right">
+                  <div className="flex flex-col gap-6 pt-12">
+                    <Link href="/" className="mb-4 flex items-center space-x-2">
+                      {logoImage && (
+                          <Image
+                            src={logoImage.imageUrl}
+                            alt="Urvar Bhumi Logo"
+                            width={24}
+                            height={24}
+                            data-ai-hint={logoImage.imageHint}
+                          />
+                        )}
+                      <span className="font-bold font-headline text-lg tracking-wider">
+                        Urvar Bhumi
+                      </span>
+                    </Link>
+
+                    {navigationLinks.map((link) => (
+                      <SheetClose asChild key={link.href}>
+                        <Link
+                          href={link.href}
+                          className="text-lg font-medium text-foreground/80 transition-colors hover:text-foreground"
+                        >
+                          {link.label}
+                        </Link>
+                      </SheetClose>
+                    ))}
+                    <hr className="my-4 border-border" />
+                    <SheetClose asChild>
+                        <Link href="#" className="flex items-center gap-2 text-lg font-medium text-foreground/80 transition-colors hover:text-foreground">
+                            <User /> Join / Sign In
+                        </Link>
+                    </SheetClose>
+                  </div>
+                </SheetContent>
+              </Sheet>
+            </div>
         </div>
       </div>
     </header>

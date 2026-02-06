@@ -3,6 +3,8 @@
 import Image from "next/image";
 import { Button } from "@/components/ui/button";
 import { PlaceHolderImages } from "@/lib/placeholder-images";
+import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import { ArrowRight } from "lucide-react";
 
 export function HeroSection() {
   const heroImage = PlaceHolderImages.find((img) => img.id === "hero-farmland");
@@ -17,10 +19,10 @@ export function HeroSection() {
   };
 
   return (
-    <section className="relative h-[90vh] min-h-[600px] max-h-[1080px] w-full flex items-center justify-center text-center text-white">
+    <section className="relative min-h-[80vh] w-full flex items-center justify-start text-white">
       {heroImage && (
         <Image
-          src={heroImage.imageUrl}
+          src='/hero-section.png'
           alt={heroImage.description}
           fill
           className="object-cover"
@@ -28,28 +30,38 @@ export function HeroSection() {
           data-ai-hint={heroImage.imageHint}
         />
       )}
-      <div className="absolute inset-0 bg-black/50" />
-      <div className="relative z-10 p-4 max-w-4xl mx-auto animate-fade-in-up">
-        <h1 className="text-5xl md:text-7xl lg:text-8xl font-bold tracking-tight">
-          उर्वर भूमि (Urvar Bhumi)
-        </h1>
-        <p className="mt-4 text-lg md:text-xl text-primary-foreground/80">
-          From Soil to the Future | मिट्टी से भविष्य तक
-        </p>
-        <p className="mt-6 max-w-2xl mx-auto text-base md:text-lg text-primary-foreground/90">
-          Restoring the power of Bihar’s farmlands through sustainable soil revival.
-        </p>
-        <div className="mt-8 flex flex-col sm:flex-row gap-4 justify-center">
-          <Button size="lg" onClick={() => scrollTo('#journey')}>
-            Explore Our Journey
-          </Button>
-          <Button size="lg" variant="secondary" onClick={() => scrollTo('#purpose')}>
-            Learn About Our Mission
-          </Button>
+      <div className="absolute inset-0 bg-gradient-to-r from-black/60 to-transparent" />
+      <div className="relative z-10 container p-4 max-w-7xl mx-auto grid md:grid-cols-2 gap-8">
+        <div className="animate-fade-in-up">
+          <h1 className="text-5xl md:text-7xl lg:text-8xl font-bold tracking-tight">
+            Urvar Bhumi
+          </h1>
+          <p className="mt-2 text-3xl md:text-4xl text-primary-foreground/80 font-bold font-headline">
+            उर्वर भूमि
+          </p>
+          <p className="mt-6 text-lg md:text-xl">
+            From Soil to the Future: मिट्टी से भविष्य तक
+          </p>
+          <div className="mt-8">
+            <Button size="lg" className="rounded-full bg-accent text-accent-foreground hover:bg-accent/90" onClick={() => scrollTo('#journey')}>
+              Explore our Journey
+              <ArrowRight className="ml-2"/>
+            </Button>
+          </div>
         </div>
-        <p className="mt-12 text-xs text-primary-foreground/60">
-          Supported by BeVisioneers Mercedes-Benz Fellowship 2025
-        </p>
+        <div className="hidden md:flex items-center justify-center">
+            <Card className="bg-primary/50 text-primary-foreground backdrop-blur-md border-primary-foreground/20 rounded-2xl md:max-w-sm">
+                <CardHeader>
+                    <CardTitle className="text-2xl">Our Mission</CardTitle>
+                </CardHeader>
+                <CardContent>
+                    <p className="text-primary-foreground/80">
+                        My purpose is to restore the natural resilience of Bihar’s farmlands by transforming farm waste into biochar and returning it to the soil.
+                    </p>
+                    <Button variant="link" className="p-0 mt-4 text-accent" onClick={() => scrollTo('#solution')}>Learn more</Button>
+                </CardContent>
+            </Card>
+        </div>
       </div>
     </section>
   );

@@ -1,42 +1,52 @@
 import Image from "next/image";
 import { PlaceHolderImages } from "@/lib/placeholder-images";
-import { Alert, AlertDescription, AlertTitle } from "@/components/ui/alert";
-import { Compass } from "lucide-react";
+import { Button } from "../ui/button";
+import { ArrowRight } from "lucide-react";
 
 export function PrototypeSection() {
-  const prototypeImage = PlaceHolderImages.find((img) => img.id === "prototype-kiln");
+  const prototypeBgImage = PlaceHolderImages.find((img) => img.id === "prototype-bg");
+  const prototypeDiagramImage = PlaceHolderImages.find((img) => img.id === "prototype-diagram");
 
   return (
-    <section id="prototype" className="py-16 sm:py-24 bg-card">
-      <div className="container grid md:grid-cols-2 gap-8 lg:gap-12 items-center">
-        <div>
-          <h2 className="text-3xl font-bold tracking-tight text-foreground sm:text-4xl">
-            Our Early Prototype
+    <section id="prototype" className="relative py-16 sm:py-24 text-primary-foreground">
+      {prototypeBgImage && (
+        <Image
+          src={prototypeBgImage.imageUrl}
+          alt={prototypeBgImage.description}
+          fill
+          className="object-cover"
+          data-ai-hint={prototypeBgImage.imageHint}
+        />
+      )}
+       <div className="absolute inset-0 bg-black/70" />
+      <div className="container relative z-10 grid md:grid-cols-2 gap-8 lg:gap-16 items-center">
+        <div className="bg-primary/50 backdrop-blur-md p-8 rounded-2xl border border-primary-foreground/20">
+          <h2 className="text-3xl font-bold tracking-tight sm:text-4xl">
+            Early Prototype
           </h2>
-          <p className="mt-4 text-lg text-muted-foreground">
-            Our prototype uses low-cost, locally made biochar units to help smallholder farmers convert stubble and farm residue into soil-building carbon.
+          <p className="mt-4 text-lg text-primary-foreground/80">
+            Our prototype uses low-cost, locally made biochar units to help smallholder farmers convert stubble into soil-building carbon.
           </p>
-          <p className="mt-4 text-lg text-muted-foreground">
-            This reduces burning, enriches soil, and improves flood resilience naturally, creating a virtuous cycle for both the environment and the community.
+          <p className="mt-4 text-primary-foreground/80">
+            This method is faster, cheaper, and more scalable than industrial alternatives, empowering communities to create their own solutions.
           </p>
-          <Alert className="mt-8 border-accent/50 bg-accent/10 text-accent-foreground">
-            <Compass className="h-4 w-4 text-accent" />
-            <AlertTitle className="text-accent-foreground font-bold">Currently Testing</AlertTitle>
-            <AlertDescription>
-              🧭 We are testing water retention and fertility impact on pilot plots.
-            </AlertDescription>
-          </Alert>
         </div>
-        <div className="relative aspect-video rounded-lg overflow-hidden shadow-lg">
-          {prototypeImage && (
-            <Image
-              src={prototypeImage.imageUrl}
-              alt={prototypeImage.description}
-              fill
-              className="object-cover"
-              data-ai-hint={prototypeImage.imageHint}
-            />
-          )}
+        <div className="flex flex-col items-center">
+            <div className="relative w-full max-w-sm aspect-square">
+            {prototypeDiagramImage && (
+                <Image
+                src={prototypeDiagramImage.imageUrl}
+                alt={prototypeDiagramImage.description}
+                fill
+                className="object-contain"
+                data-ai-hint={prototypeDiagramImage.imageHint}
+                />
+            )}
+            </div>
+            <Button size="lg" className="mt-8 rounded-full bg-accent text-accent-foreground hover:bg-accent/90">
+                BeVisioneers Milestone 1: Submission
+                <ArrowRight className="ml-2"/>
+            </Button>
         </div>
       </div>
     </section>

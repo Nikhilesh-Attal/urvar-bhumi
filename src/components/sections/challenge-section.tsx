@@ -1,35 +1,42 @@
 import Image from "next/image";
 import { PlaceHolderImages } from "@/lib/placeholder-images";
-import { Card, CardContent } from "@/components/ui/card";
-import { CheckCircle } from "lucide-react";
+import { Button } from "../ui/button";
+import { Home, Droplets, Leaf, Cloud } from "lucide-react";
 
 const challenges = [
-  "Every year, floods impact over 8–10 million people in Bihar.",
-  "Poor soil absorption worsens water runoff and leads to erosion.",
-  "Excessive fertilizer use degrades natural soil fertility over time.",
-  "Stubble burning contributes to air pollution and carbon emissions."
+  {
+    icon: Home,
+    text: "Every year, floods impact over 8–10 million people in Bihar.",
+  },
+  {
+    icon: Droplets,
+    text: "Poor soil absorption worsens water runoff and leads to erosion.",
+  },
+  {
+    icon: Leaf,
+    text: "Excessive fertilizer use degrades natural soil fertility over time.",
+  },
+  {
+    icon: Cloud,
+    text: "Stubble burning contributes to air pollution and carbon emissions.",
+  },
 ];
 
 export function ChallengeSection() {
   const floodImage = PlaceHolderImages.find((img) => img.id === "challenge-flood");
+  const challengeIcons = challenges.map(c => ({
+      ...c,
+      icon: PlaceHolderImages.find(p => p.id === c.id)
+  }));
 
   return (
-    <section id="challenge" className="py-16 sm:py-24">
+    <section id="challenge" className="py-16 sm:py-24 bg-card">
       <div className="container">
-        <div className="text-center mb-12">
-          <h2 className="text-3xl font-bold tracking-tight text-foreground sm:text-4xl">
-            The Challenge We’re Solving
-          </h2>
-          <p className="mt-4 text-lg text-muted-foreground">
-            When soil loses strength, communities lose stability.
-          </p>
-        </div>
-
-        <div className="grid md:grid-cols-2 gap-8 lg:gap-12 items-center">
-          <div className="relative aspect-[4/3] rounded-lg overflow-hidden shadow-lg">
+        <div className="grid md:grid-cols-2 gap-8 lg:gap-16 items-center">
+          <div className="relative aspect-video md:aspect-square rounded-2xl overflow-hidden shadow-lg">
             {floodImage && (
               <Image
-                src={floodImage.imageUrl}
+                src='/bihar-flood.png'
                 alt={floodImage.description}
                 fill
                 className="object-cover"
@@ -37,24 +44,25 @@ export function ChallengeSection() {
               />
             )}
           </div>
-          
-          <div>
-            <ul className="space-y-4">
-              {challenges.map((challenge, index) => (
-                <li key={index} className="flex items-start gap-3">
-                  <CheckCircle className="w-5 h-5 text-primary mt-1 flex-shrink-0" />
-                  <span className="text-muted-foreground">{challenge}</span>
-                </li>
-              ))}
-            </ul>
+          <div className="md:mt-0">
+            <h2 className="text-3xl font-bold tracking-tight text-foreground sm:text-4xl mb-6">
+              The Challenge We Face
+            </h2>
+            <p className="text-muted-foreground mb-8">
+                Monsoon floods devastate the region, while in the dry season, the soil is too parched for healthy crops.
+            </p>
 
-            <Card className="mt-8 bg-secondary border-secondary-foreground/20">
-              <CardContent className="p-6">
-                <blockquote className="text-lg font-semibold italic text-secondary-foreground">
-                  “Floods are not just natural disasters—they’re symptoms of soil losing its voice.”
-                </blockquote>
-              </CardContent>
-            </Card>
+            <ul className="space-y-6 mb-8">
+              {challenges.map((item, index) => (
+  <div key={index} className="flex gap-4 items-start">
+    <item.icon className="w-6 h-6 text-muted-foreground" />
+    <p className="text-sm text-muted-foreground">{item.text}</p>
+  </div>
+))}
+            </ul>
+            <Button variant="outline" className="rounded-full">
+              Prototype project: Biochar-Bihar to manage floods and improve soil
+            </Button>
           </div>
         </div>
       </div>
