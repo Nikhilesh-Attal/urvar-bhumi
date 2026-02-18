@@ -11,14 +11,18 @@ export function SolutionSection() {
 
   return (
     <section id="solution" className="solution-section py-16 sm:py-24 bg-card">
-      <div className="container grid lg:grid-cols-2 gap-12 items-center">
+      <div className="container grid md:grid-cols-2 gap-12 items-center">
+        
+        {/* LEFT — CONTENT */}
         <div>
           <h2 className="text-3xl font-bold tracking-tight text-foreground sm:text-4xl">
             The Urvar Bhumi Approach
           </h2>
 
           <p className="mt-4 max-w-2xl text-lg text-muted-foreground">
-            We transform agricultural waste into biochar—a powerful, natural soil enhancer. This ancient approach boosts fertility, absorbs water, and stores carbon for long-term climate resilience.
+            We transform agricultural waste into biochar—a powerful, natural soil enhancer.
+            This ancient approach boosts fertility, absorbs water, and stores carbon for
+            long-term climate resilience.
           </p>
 
           <div className="mt-12">
@@ -45,17 +49,17 @@ export function SolutionSection() {
           </Button>
         </div>
 
-        {/* Video Section */}
-        <div className="relative hidden lg:block h-full min-h-[500px] rounded-2xl overflow-hidden shadow-lg">
+        {/* RIGHT — VIDEO */}
+        <div className="relative w-3/5 mx-auto h-full aspect-video rounded-2xl overflow-hidden shadow-lg">
           <video
             src="/rotan-rice.mp4"
             autoPlay
-            loop
             muted
+            loop
             playsInline
-            className="absolute inset-0 w-full h-full object-contain"
+            className="w-full h-auto object-cover pointer-events-none"
           />
-</div>
+        </div>
 
       </div>
     </section>

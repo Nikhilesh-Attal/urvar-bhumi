@@ -2,7 +2,6 @@ import { HeroSection } from '@/components/sections/hero-section';
 import { ChallengeSection } from '@/components/sections/challenge-section';
 import { SolutionSection } from '@/components/sections/solution-section';
 import { PrototypeSection } from '@/components/sections/prototype-section';
-import { TeamSection } from '@/components/sections/team-section';
 import { ContactSection } from '@/components/sections/contact-section';
 import { QuoteSection } from '@/components/sections/quote-section';
 import { CollaborateSection } from '@/components/sections/collaborate-section';
@@ -22,7 +21,6 @@ export default function Home() {
       />
       <SolutionSection />
       <PrototypeSection />
-      <TeamSection />
       <CollaborateSection />
       <BlogSection />
       <ContactSection />

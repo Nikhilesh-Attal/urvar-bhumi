@@ -14,6 +14,7 @@ const navigationLinks = [
   { href: "/#solution", label: "Our Mission" },
   { href: "/blog", label: "Blog" },
   { href: "/gallery", label: "Gallery" },
+  { href: "/about", label: "About Us" },
   { href: "/resources", label: "Resources" },
 ];
 
@@ -65,9 +66,9 @@ export function SiteHeader() {
         </nav>
 
         <div className="flex flex-1 items-center justify-end space-x-2">
-            <Button variant="ghost" size="icon" className="hidden md:inline-flex">
+            {/*<Button variant="ghost" size="icon" className="hidden md:inline-flex">
                 <User />
-            </Button>
+            </Button>*/}
             <ThemeToggle />
             
             <div className="md:hidden">

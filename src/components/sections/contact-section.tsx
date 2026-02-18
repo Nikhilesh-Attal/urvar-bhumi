@@ -26,8 +26,6 @@ export function ContactSection() {
   const initialState = { message: null, errors: {}, success: false };
   const [state, dispatch] = useFormState(submitContactForm, initialState);
   
-  const bevisioneersLogo = PlaceHolderImages.find(img => img.id === 'logo-bevisioneers-white');
-
   useEffect(() => {
     if (state.message) {
       if (state.success) {
@@ -89,11 +87,6 @@ export function ContactSection() {
                 </a>
               </div>
             </div>
-            <div className="mt-12 pt-8">
-              {bevisioneersLogo && (
-                <Image src='/beVisioneers_logo.png' alt="BeVisioneers Logo" width={300} height={80} data-ai-hint={bevisioneersLogo.imageHint} />
-              )}
-            </div>
           </div>
           <form action={dispatch} className="space-y-4">
             <div>
@@ -115,7 +108,7 @@ export function ContactSection() {
           </form>
         </div>
         <div className="mt-16 pt-8 border-t border-primary-foreground/20 text-center text-sm text-primary-foreground/60">
-          <p>Urvar Bhumi © {new Date().getFullYear()} | A BeVisioneers Fellowship Project</p>
+          <p>Urvar Bhumi © {new Date().getFullYear()}</p>
         </div>
       </div>
     </footer>

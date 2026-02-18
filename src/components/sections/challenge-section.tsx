@@ -54,13 +54,13 @@ export function ChallengeSection() {
 
             <ul className="space-y-6 mb-8">
               {challenges.map((item, index) => (
-  <div key={index} className="flex gap-4 items-start">
-    <item.icon className="w-6 h-6 text-muted-foreground" />
-    <p className="text-sm text-muted-foreground">{item.text}</p>
-  </div>
-))}
+                <li key={index} className="flex gap-4 items-start">
+                  <item.icon className="w-6 h-6 text-muted-foreground mt-1" />
+                  <p className="text-sm text-muted-foreground">{item.text}</p>
+                </li>
+              ))}
             </ul>
-            <Button variant="outline" className="rounded-full">
+            <Button variant="outline" className="rounded-full h-auto whitespace-normal text-left">
               Prototype project: Biochar-Bihar to manage floods and improve soil
             </Button>
           </div>
