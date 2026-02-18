@@ -41,7 +41,7 @@ export function SiteHeader() {
         <Link href="/" className="mr-6 flex items-center space-x-2">
            {logoImage && (
               <Image
-                src={logoImage.imageUrl}
+                src="/navbar.png"
                 alt="Urvar Bhumi Logo"
                 width={32}
                 height={32}

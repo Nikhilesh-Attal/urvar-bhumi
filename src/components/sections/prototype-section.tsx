@@ -44,7 +44,7 @@ export function PrototypeSection() {
             )}
             </div>
             <Button size="lg" className="mt-8 rounded-full bg-accent text-accent-foreground hover:bg-accent/90">
-                BeVisioneers Milestone 1: Submission
+                Urvar Bhumi Milestone 1: Submission
                 <ArrowRight className="ml-2"/>
             </Button>
         </div>

@@ -50,7 +50,7 @@ export function SolutionSection() {
         </div>
 
         {/* RIGHT — VIDEO */}
-        <div className="relative w-3/5 mx-auto h-full aspect-video rounded-2xl overflow-hidden shadow-lg">
+        <div className="relative w-3/5 mx-auto h-[400px] aspect-video rounded-2xl overflow-hidden shadow-lg">
           <video
             src="/rotan-rice.mp4"
             autoPlay
